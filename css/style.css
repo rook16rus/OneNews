@@ -1,0 +1,147 @@
+@font-face {
+    font-family: "PT Root UI";
+    src: url("../fonts/Ptrootui.woff") format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "PT Root UI";
+    src: url("../fonts/Ptrootuimedium.woff") format("woff");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "PT Root UI";
+    src: url("../fonts/Ptrootuibold.woff") format("woff");
+    font-weight: 700;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+
+    font-family: "PT Root UI", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: normal;
+    color: #23201F;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.main-article .section-title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 42px;
+
+    margin: 0;
+}
+
+a:focus, a:hover {
+    opacity: 0.6;
+}
+
+.a:active {
+    opacity: 0.3;
+}
+
+.header-wrapper:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 22px 0;
+}
+
+.indicators-list {
+    display: flex;
+
+    list-style: none;
+    margin: 0 -32px 0 0;
+    padding: 0;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+
+.indicators-item {
+    margin-right: 32px;
+}
+
+.indicators-name {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.indicators-diff {
+    display: inline-block;
+
+    width: 5px;
+    height: 8px;
+    margin-right: 3px;
+}
+
+.indicators-diff-fall {
+    background: url("../img/arrow-down.svg") no-repeat center;
+}
+
+.indicators-diff-grow {
+    background: url("../img/arrow-up.svg") no-repeat center;
+}
+
+.rub {
+    display: inline-block;
+    width: 5px;
+    height: 8px;
+    margin-left: 3px;
+    background: url("../img/ruble.svg") no-repeat center;
+}
+
+.header-wrapper:last-of-type {
+    padding: 15px 0;
+    border-top: 1px solid  rgba(35, 32, 31, 0.1);
+    border-bottom: 1px solid  rgba(35, 32, 31, 0.1);
+}
+
+.menu-list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 970px;
+}
+
+.menu-item {
+    margin-right: 37px;
+}
+
+.menu-item:last-child {
+    margin-right: 0;
+}
+
+.menu-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #23201F;
+    text-decoration: none;
+}
