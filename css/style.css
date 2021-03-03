@@ -464,3 +464,75 @@ h1 {
 .debtor .right-aside:last-of-type {
     top: 1023px;
 }
+
+.payment-loan {
+    margin-top: 60px;
+}
+
+.payment-loan .right-aside {
+    top: 72px;
+}
+
+.nested-list-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+
+    margin: 40px 25px;
+}
+
+.nested-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: outline;
+}
+
+.nested-list:not(.nested-list .nested-list) {
+    margin-bottom: 40px;
+}
+
+.nested-list-item {
+    counter-increment: outline;
+    margin-top: 10px;
+}
+
+.nested-list-item::before {
+    content: counters(outline, ".") ". ";
+}
+
+.nested-list > .nested-list-item {
+    font-weight: 500;
+}
+
+.nested-list > .nested-list-item .nested-list-item {
+    font-weight: normal;
+    margin-left: 20px;
+}
+
+.formula-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.formula {
+    padding: 20px 10px;
+    margin-right: 30px;
+    border: 4px solid #1C5F87;
+    text-align: center;
+}
+
+.formula p {
+    margin: 0;
+
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 45px;
+}
+
+.formula-legend p {
+    margin: 0 0 10px;
+    font-size: 20px;
+    line-height: 28px;
+}
