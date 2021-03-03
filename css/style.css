@@ -347,7 +347,6 @@ h1 {
 
 .right-aside {
     position: absolute;
-    top: 408px;
     right: 0;
 
     width: 170px;
@@ -355,3 +354,51 @@ h1 {
     font-size: 18px;
     line-height: 24px;
 }
+
+.borrower .right-aside {
+    top: 408px;
+}
+
+.credits-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.credits-table caption {
+    margin: 40px 0 30px;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.credits-table td, .credits-table th {
+    border: 1px solid black;
+    padding: 12px 10px;
+
+}
+
+.credits-table td:not(:first-child) {
+    text-align: center;
+}
+
+.credits-table td {
+    background-color: #fff;
+}
+
+.credits-table tfoot td, .credits-table th {
+    background-color: #1C5F87;
+    color: #fff;
+    font-weight: 500;
+}
+
+.main-article figure {
+    margin: 0;
+}
+
+.main-article figcaption {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 15px;
+}
+
