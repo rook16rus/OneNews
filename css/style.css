@@ -59,6 +59,10 @@ body {
     color: #1C5F87;
 }
 
+mark {
+    background-color: #CFE1EB;
+}
+
 .main-article .section-title {
     font-weight: 500;
     font-size: 30px;
@@ -335,7 +339,8 @@ h1 {
 }
 
 .border-aside p {
-    margin: 0 0 10px;
+    margin: 0 auto 10px;
+    max-width: 560px;
 }
 
 .border-aside .link {
@@ -535,4 +540,68 @@ h1 {
     margin: 0 0 10px;
     font-size: 20px;
     line-height: 28px;
+}
+
+.late-payment {
+    margin-top: 60px;
+}
+
+.late-payment .right-aside {
+    top: 72px;
+}
+
+.late-payment-list-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+
+    margin: 40px 25px;
+}
+
+.late-payment-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: late_payment;
+}
+
+.late-payment-list:last-of-type {
+    counter-reset: late_payment_continue 2;
+}
+
+.late-payment-list:last-of-type .late-payment-item {
+    counter-increment: late_payment_continue;
+}
+
+.late-payment-list:last-of-type .late-payment-item::before {
+    content: counters(late_payment_continue, "");
+}
+
+.late-payment-item {
+    counter-increment: late_payment;
+    display: flex;
+    align-items: flex-start;
+}
+
+.late-payment-item::before {
+    content: counters(late_payment, "");
+
+    min-width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color: #FA5B3D;
+    color: #fff;
+
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 40px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.late-payment .border-aside {
+    margin-right: 35px;
+    text-align: left;
+    padding-left: 50px;
 }
