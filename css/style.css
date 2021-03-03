@@ -39,15 +39,6 @@ body {
     overflow: hidden;
 }
 
-.section-title {
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 42px;
-
-    margin: 0;
-    padding: 0;
-}
-
 .container {
     width: 1170px;
     margin: 0 auto;
@@ -373,7 +364,7 @@ h1 {
 }
 
 .credits-table td, .credits-table th {
-    border: 1px solid black;
+    border: 1px solid rgba(35, 32, 31, 0.6);
     padding: 12px 10px;
 
 }
@@ -402,3 +393,19 @@ h1 {
     margin-top: 15px;
 }
 
+.main-article h2.credits-reason-title {
+    margin: 60px 0 30px;
+}
+
+.credits-reason .right-aside {
+    top: 141px;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.chart {
+    display: block;
+    margin-top: 40px;
+}
