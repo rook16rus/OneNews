@@ -67,6 +67,14 @@ body {
     margin: 0;
 }
 
+.main-article h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+
+    margin: 0;
+}
+
 a:focus, a:hover {
     opacity: 0.6;
 }
@@ -353,6 +361,9 @@ h1 {
 .credits-table {
     width: 100%;
     border-collapse: collapse;
+
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .credits-table caption {
@@ -408,4 +419,48 @@ h1 {
 .chart {
     display: block;
     margin-top: 40px;
+}
+
+.debtor {
+    margin-top: 60px;
+}
+
+.debtor .right-aside:first-of-type {
+    top: 105px;
+}
+
+.debtor-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.debtor-table caption {
+    margin: 40px 0 30px;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.debtor-table td {
+    padding: 10px 20px;
+}
+
+.debtor-table tr:nth-child(even) {
+    background-color: #CFE1EB;
+}
+
+.debtor-table tr:nth-child(even) td:first-child, .debtor-table tr:nth-child(even) td:last-child {
+    border-radius: 4px;
+}
+
+.debtor h3 {
+    margin: 40px 30px;
+}
+
+.debtor .right-aside:last-of-type {
+    top: 1023px;
 }
